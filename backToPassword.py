@@ -16,7 +16,7 @@ option = EdgeOptions()
 option.add_argument("start-maximized")
 
 driver = webdriver.Edge(options = option)
-driver.get("https://myuserauth.accenture.com")
+driver.get("####################################")
 
 time.sleep(6)
 os.system('cls')
@@ -111,7 +111,7 @@ option = EdgeOptions()
 option.add_argument("start-maximized")
 option.add_argument("inprivate")
 driver = webdriver.Edge(options = option)
-driver.get("https://mypasswordless.accenture.com")
+driver.get("########################")
 
 try:
     WebDriverWait(driver,timeout).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]")))
@@ -119,7 +119,7 @@ try:
 except TimeoutException:
     print("PASSWORDLESS SITE FAILED. RUN SCRIPT AGAIN")
 
-userField.send_keys(userToFix + "@accenture.com")
+userField.send_keys(userToFix + "@############.com")
 
 
 driver.execute_script("window.scrollTo(5,document.body.scrollHeight)")
@@ -247,7 +247,7 @@ option.add_argument("start-maximized")
 driver = webdriver.Edge(options = option)
 
 
-driver.get("https://directory.accenture.com/ResetPassword/Home")
+driver.get("################################################")
 
 time.sleep(3)
 os.system('cls')
